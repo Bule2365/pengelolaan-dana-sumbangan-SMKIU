@@ -30,6 +30,29 @@
    git clone https://github.com/username/pengelolaan-dana-sumbangan.git
    cd pengelolaan-dana-sumbangan
 
-composer install
-npm install
-npm run dev
+2. **nstall Dependencies**
+   ```bash
+   composer install
+   npm install
+   npm run dev
+
+3. **Konfigurasi Environment**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+
+4. **Migrasi Database**
+   ```bash
+   php artisan migrate
+
+5. **Menjalankan Server Lokal**
+   ```bash
+   php artisan serve
+
+
+### Penjelasan:
+- Template ini sudah disusun dengan **instruksi instalasi** yang jelas dan rinci sesuai urutan yang Anda inginkan.
+- **Struktur Proyek** dan **Kontribusi** disertakan untuk panduan tambahan bagi pengembang lain yang ingin memahami struktur aplikasi atau berkontribusi.
+- **Link Badge** di bagian atas memberikan informasi tentang versi Laravel, Tailwind CSS, dan lisensi yang digunakan. 
+
+Anda hanya perlu mengganti `https://github.com/username/pengelolaan-dana-sumbangan.git` dengan URL repository GitHub proyek Anda.
